@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: hsla(210, 15%, 85%, 1);
+}
+.App {
+    text-align: center;
+    color: hsla(210, 15%, 25%, 1);
+}
+.article{
+    margin: 20px;
+    padding: 20px;
+    background-color: hsla(210, 15%, 95%, 1);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.article-list main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}

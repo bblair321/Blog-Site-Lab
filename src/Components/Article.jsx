@@ -1,11 +1,12 @@
-function Article(){
+function Article({title,date,preview}){
     return (
         <div className="article">
-            <h2>Article Title</h2>
-            <p>This is the content of the article. It contains information about various topics that are relevant to the blog.</p>
-            <p>Author: John Doe</p>
-            <p>Date: January 1, 2023</p>
-        </div>    
+        <article> 
+            <h3>{title}</h3>
+            <small>{date}</small>
+            <p>{preview}</p>
+        </article>
+        </div>      
     );
 }
 

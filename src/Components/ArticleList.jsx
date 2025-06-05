@@ -2,6 +2,8 @@ import Article from "./Article";
 
 function ArticleList({ posts }) {
     return (
+        <div className="article-list">
+            <h2>Articles</h2>
         <main>
             {posts.map(post => (
                 <Article
@@ -12,6 +14,7 @@ function ArticleList({ posts }) {
                 />
             ))}
         </main>
+        </div>
     );
 }
 
