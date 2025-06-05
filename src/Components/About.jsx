@@ -1,11 +1,10 @@
-function About(){
+function About({image, about}){
     return (
         <div>
-            <h3>
-                <p>
-                    This is a basic blog site.
-                </p>
-            </h3>
+            <aside>
+                <img src={image} alt="blog logo"></img>
+                <p>{about}</p>
+            </aside>
         </div>
     );
 }

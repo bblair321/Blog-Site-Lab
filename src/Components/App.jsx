@@ -3,13 +3,14 @@ import Header from './Header.jsx'
 import About from './About.jsx'
 import ArticleList from './ArticleList.jsx'
 import Footer from './Footer.jsx'
+import posts from '../data/data.js'
 
 function App() {
     return(
     <>
         <Header name="This is a Blog Site"/>
-        <About />
-        <ArticleList />
+        <About image="data:image/png;base64,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" about="This is some text about a blog"/>
+        <ArticleList posts={posts} />
         <Footer />
     </>
     );

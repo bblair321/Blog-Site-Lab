@@ -1,12 +1,18 @@
 import Article from "./Article";
 
-function ArticleList(){
+function ArticleList({ posts }) {
     return (
-        <div>
-            <h2>Articles</h2>
-            <Article />
-        </div>
+        <main>
+            {posts.map(post => (
+                <Article
+                    key={post.id}
+                    title={post.title}
+                    date={post.date}
+                    preview={post.preview}
+                />
+            ))}
+        </main>
     );
 }
 
-export default ArticleList
+export default ArticleList;
